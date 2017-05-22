@@ -13,7 +13,7 @@ var gulp = require('gulp'),
     pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
     browserSync = require('browser-sync'),
-    rename = require('gulp-rename');
+    rename = require('gulp-rename'),
     reload = browserSync.reload;
     
 // Path
@@ -79,7 +79,7 @@ gulp.task('style:build', function() {
         .pipe(prefixer(['last 5 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: false})) // Add vender prefixes
         .pipe(cssmin()) // Minimise css file
         .pipe(rename({
-            sufix: '.min'
+            suffix: '.min'
         })) // Add sufix .min to main.css
         .pipe(sourcemaps.write()) // Write sourcemaps
         .pipe(gulp.dest(path.build.css)) // Add to build folder

@@ -1,4 +1,9 @@
 @font-face {
-    font-family: '';
-    src: url('');
+    font-family: 'Didact Gothic';
+    src: url('../fonts/DidactGothicRegular.ttf');
+}
+
+@font-face {
+    font-family: 'Poiret One';
+    src: url('../fonts/PoiretOneNormal.ttf');
 }
